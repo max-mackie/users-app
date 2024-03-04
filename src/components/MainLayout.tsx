@@ -1,18 +1,26 @@
 import Footer from "./Footer";
 import Header from "./Header";
 
-export function MainLayout({ children }: any) {
-    return (<>
-        <header>
-            <Header />
-        </header>
-        <div className="min-h-screen p-2">
-            {children}
-        </div>
-        <footer>
-            <Footer/>
-        </footer>
-    </>)
+interface MainLayoutProps {
+    // Defines the types of children that can be passed to MainLayout.
+    children: React.ReactNode;
+}
+
+// MainLayout component wraps the application's content with a common header and footer.
+export function MainLayout({ children }: MainLayoutProps) {
+    return (
+        <>
+            {/* Background*/}
+            <div className="main">
+                <div className="gradient"/>
+            </div>
+            <main className="app">
+                <Header />
+                {children}
+                <Footer />
+            </main>
+        </>
+    );
 }
 
 export default MainLayout;

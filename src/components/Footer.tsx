@@ -1,7 +1,10 @@
 export function Footer() {
-    return (<>
-        <div className="flex justify-start items-center h-10 bg-cyan-600">Footer</div>
-    </>)
-}
+    return (
+    <div className="footer_bottom">
+        <div className="flex-center">
+            <span>Built by Max Mackie</span>
+        </div>
+    </div>
+)}
 
 export default Footer;
