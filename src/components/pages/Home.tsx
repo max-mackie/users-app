@@ -12,8 +12,10 @@ export function HomeComponent() {
         dispatch(getAllUserRequestAction());
     }, [dispatch]);
 
-    return (<>
-        <div className="grid grid-cols-3 gap-3 p-2">
+    return (
+    <>
+        <h1 className="head_text blue_gradient text-center mb-16">Meet The Team</h1>
+        <div className="flex gap-8 justify-center flex-wrap p-2">
             {allUserState.users.map((user: UserInfoInterface) => {
                 return <UserCard user={user} key={user.id}/>
             })}

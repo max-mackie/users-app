@@ -3,15 +3,14 @@ import Header from "./Header";
 
 export function MainLayout({ children }: any) {
     return (<>
-        <header>
-            <Header />
-        </header>
-        <div className="min-h-screen p-2">
-            {children}
+        <div className="main">
+            <div className="gradient"/>
         </div>
-        <footer>
-            <Footer/>
-        </footer>
+        <main className="app">
+            <Header />
+            {children}
+            <Footer />
+        </main>
     </>)
 }
 

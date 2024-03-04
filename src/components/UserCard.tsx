@@ -13,12 +13,16 @@ const UserCard: React.FC<UserCardProps> = ({user}) => {
 
   return (
     <div 
-        className="flex flex-col justify-center items-center hover:cursor-pointer border shadow"
+        className="user_profile"
         onClick={handleClick}
     >
-        <img className="h-65 w-60" alt="user image" src={user.avatar}/>
-        <span>{`Name: ${user.first_name} ${user.last_name}`}</span>
-        <span>{`Email: ${user.email}`}</span>
+        <img 
+            className="user_image"
+            alt="user image" 
+            src={user.avatar}
+        />
+        <span className="mt-2 text-lg font-semibold">{`${user.first_name} ${user.last_name}`}</span>
+        <span className="text-gray-600">{user.email}</span>
     </div>
   )
 }
