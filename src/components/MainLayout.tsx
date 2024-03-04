@@ -16,7 +16,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             </div>
             <main className="app">
                 <Header />
-                {children} // Primary content passed as children
+                {children}
                 <Footer />
             </main>
         </>

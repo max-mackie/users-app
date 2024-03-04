@@ -4,6 +4,7 @@ import { fetchUserDetailsRequest } from "../../redux-store/reducer/userDetailsSl
 import { useParams, useNavigate } from 'react-router-dom';
 import { AppRoutes } from "../../utils/AppRoutes";
 import { RootState } from "../../redux-store/reducer/rootReducer";
+import loaderSvg from "../../loader.svg";
 
 /**
  * Component to display the details of a user.
