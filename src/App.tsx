@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./components/MainLayout"
 import Home from "./components/pages/Home"
+import UserDetails from "./components/pages/UserDetails"
 import {AppRoutes} from "./utils/AppRoutes";
 
 const getMainLayout = () => {
@@ -12,6 +13,7 @@ const getMainLayout = () => {
     <MainLayout>
       <Routes>
         <Route path={AppRoutes.HOME} element={<Home/>}/>
+        <Route path={AppRoutes.USER} element={<UserDetails/>}/>
         <Route path={AppRoutes.ANY} element={<Home/>}/>
       </Routes>
     </MainLayout>
