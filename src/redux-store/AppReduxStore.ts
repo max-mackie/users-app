@@ -6,7 +6,7 @@ import {rootEpic} from "./epic/rootEpic";
 const epicMiddleware = createEpicMiddleware();
 
 const AppReduxStore = configureStore({
-    reducer: rootReducer(),
+    reducer: rootReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(epicMiddleware)
 });
 epicMiddleware.run(rootEpic);
