@@ -63,6 +63,9 @@ or if you prefer yarn:
   `yarn build`
   Serve the production build locally (requires a server like `serve`):
   `serve -s build`
+- **Test Build:**
+  To run the testing suite:
+  `npm run test`
 
 ## Future Enhancements
 
