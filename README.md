@@ -1,6 +1,6 @@
 # LineUp - User Directory Web App
 
-LineUp is a web application designed to showcase a directory of users, leveraging modern web technologies for a smooth, interactive experience. Built with React, Redux, and styled with TailwindCSS, this app provides a seamless way to view and manage user information. Below, you'll find detailed instructions on setting up the project, running the app locally, and suggestions for future enhancements.
+This is a web application designed to showcase a directory of users, leveraging modern web technologies for a smooth, interactive experience. Built with React, Redux, and styled with TailwindCSS, this app provides a seamless way to view and manage user information. Below, you'll find detailed instructions on setting up the project, running the app locally, and suggestions for future enhancements.
 
 ![screenshot](image.png)
 
