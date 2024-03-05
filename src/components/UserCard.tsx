@@ -15,7 +15,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
     <div className="user_profile" onClick={handleClick}>
       <img
         className="user_image"
-        alt="user image"
+        alt="user profile"
         src={user.avatar}
       />
       <span className="mt-2 text-lg font-semibold">{`${user.first_name} ${user.last_name}`}</span>

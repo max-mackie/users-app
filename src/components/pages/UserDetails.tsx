@@ -4,7 +4,6 @@ import { fetchUserDetailsRequest } from "../../redux-store/reducer/userDetailsSl
 import { useParams, useNavigate } from 'react-router-dom';
 import { AppRoutes } from "../../utils/AppRoutes";
 import { RootState } from "../../redux-store/reducer/rootReducer";
-import loaderSvg from "../../loader.svg";
 
 /**
  * Component to display the details of a user.
@@ -39,7 +38,7 @@ export function UserDetails() {
             <div className="flex flex-col w-[50%] mt-16 justify-center items-center border shadow p-4 bg-white">
                 <img 
                     className="h-[80%] w-[80%] md:h-[70%] md:w-[70%] object-cover rounded-full border-4 border-gray-200"
-                    alt="user image"
+                    alt="user profile"
                     src={userState.avatar}
                 />
                 <span className="mt-2 text-lg font-semibold">{`${userState.first_name} ${userState.last_name}`}</span>
